@@ -5,7 +5,6 @@ const _ = require('lodash');
 require('dotenv').config(); // Load the .env file
 
 module.exports = {
-  prefix: '',
   discord: {
     token: _.get(process, 'env.DISCORD_TOKEN', '')
   },
