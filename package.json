@@ -4,7 +4,7 @@
   "description": "A Tide bot",
   "main": "index.js",
   "scripts": {
-    "start": "node tide-bot.js",
+    "start": "NODE_ENV=production node tide-bot.js",
     "start-dev": "NODE_ENV=development node tide-bot.js",
     "lint": "eslint ."
   },
