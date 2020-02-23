@@ -1,18 +1,16 @@
+'use strict';
+
 module.exports = {
-  root: true,
+  extends: ['eslint:recommended', 'google'],
   env: {
-    node: true
-  },
-  globals: {
-  },
-  extends: [
-    'semistandard'
-  ],
-  rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    node: true,
+    es2017: true,
   },
   parserOptions: {
-    parser: 'babel-eslint'
-  }
+    ecmaVersion: 2018,
+  },
+  rules: {
+    'require-jsdoc': 'off',
+    strict: ['error', 'global'],
+  },
 };

@@ -1,0 +1,40 @@
+{
+  discord: {
+    token: '',
+    prefix: '!',
+    commandPrefix: {
+      // Use the mention as a command prefix (true/false)
+      mention: {
+        enabled: true
+      },
+      // Use a character or a string as a command prefix
+      text: {
+        enabled: false,
+        value: '!'
+      },
+    },
+    // Command specific settings
+    // - default: (defaults for all commands)
+    //   - cooldown: Cooldown when cooldown not specified
+    // - [command]:
+    //   - enabled: true/false (default: true)
+    commands: {
+      default: {
+        cooldown: 2,
+      },
+      satisfactory: {
+        // This command is still in development
+        enabled: false
+      },
+    },
+  },
+  log: {
+    level: 'info',
+    useConsoleColors: false,
+  },
+  proxmox: {
+    domain: '',
+    username: '',
+    password: '',
+  },
+}
