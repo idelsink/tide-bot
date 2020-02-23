@@ -1,7 +1,6 @@
 {
   discord: {
     token: '',
-    prefix: '!',
     commandPrefix: {
       // Use the mention as a command prefix (true/false)
       mention: {
