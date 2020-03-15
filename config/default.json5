@@ -26,6 +26,19 @@
         enabled: false
       },
     },
+    // Guild specific settings
+    // -  default: (default guild settings)
+    //  - channels: (channel specific settings)
+    //    - enabled: true/false (default: true)
+    guilds: {
+      default: {
+        channels: {
+          default: {
+            enabled: true
+          }
+        }
+      },
+    }
   },
   log: {
     level: 'info',
