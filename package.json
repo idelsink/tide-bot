@@ -4,8 +4,9 @@
   "description": "A Tide bot",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_ENV=production node tide-bot.js",
-    "start-dev": "NODE_ENV=development node tide-bot.js",
+    "start": "NODE_ENV=production node index.js",
+    "start-dev": "NODE_ENV=development node index.js",
+    "watch": "NODE_ENV=production nodemon index.js",
     "lint": "eslint ."
   },
   "author": "Ingmar Delsink",
