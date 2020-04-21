@@ -16,15 +16,17 @@
     "@ffflorian/icanhazdadjoke": "^1.1.5",
     "axios": "^0.19.2",
     "bluebird": "^3.7.2",
-    "config": "^3.3.0",
-    "discord.js": "^12.0.2",
-    "ffmpeg-static": "^4.0.1",
+    "config": "^3.3.1",
+    "discord.js": "^12.2.0",
+    "ffmpeg-static": "^4.1.1",
     "git-describe": "^4.0.4",
     "lodash": "^4.17.15",
-    "log4js": "^6.1.2",
+    "log4js": "^6.2.1",
     "proxmox": "^0.1.0",
     "sodium": "^3.0.2",
-    "ytdl-core-discord": "^1.2.0"
+    "ytdl-core": "^2.1.0",
+    "ytdl-core-discord": "^1.2.0",
+    "ytpl": "^0.1.20"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
