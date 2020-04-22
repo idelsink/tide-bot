@@ -24,7 +24,6 @@
     "log4js": "^6.2.1",
     "proxmox": "^0.1.0",
     "sodium": "^3.0.2",
-    "ytdl-core": "^2.1.0",
     "ytdl-core-discord": "^1.2.0",
     "ytpl": "^0.1.20"
   },
