@@ -17,6 +17,7 @@
     "axios": "^0.19.2",
     "bluebird": "^3.7.2",
     "config": "^3.3.2",
+    "cowsay": "^1.4.0",
     "discord.js": "^12.3.1",
     "ffmpeg-static": "^4.2.7",
     "git-describe": "^4.0.4",
