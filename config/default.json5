@@ -21,6 +21,11 @@
       default: {
         cooldown: 2,
       },
+      ramble: {
+        // Can be an array, an https:// URI, or a file:// URI
+        // Must contain a JSON array with strings
+        ramblings: ['No ramblings have been configured. Sad'],
+      },
       satisfactory: {
         // This command is still in development
         enabled: false
