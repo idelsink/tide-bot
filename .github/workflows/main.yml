@@ -2,9 +2,6 @@
 name: CI
 
 on:
-  create:
-    tags:
-      - v*
   push:
     branches:
       - master
@@ -15,21 +12,25 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    env:
+      CONTAINER_IMAGE: tide-discord-bot
+      CONTAINER_TAG: latest
+
     steps:
       - uses: actions/checkout@v2
 
       - name: Build container
         uses: redhat-actions/buildah-build@v1
         with:
-          image: tide-discord-bot
-          tag: ${{ github.ref }}
+          image: ${{ env.CONTAINER_IMAGE }}
+          tag: ${{ env.CONTAINER_TAG }}
           dockerfiles: ./Dockerfile
 
       - name: Push to registry
         uses: redhat-actions/push-to-registry@v1.2
         with:
-          image: tide-discord-bot
-          tag: ${{ github.ref }}
+          image: ${{ env.CONTAINER_IMAGE }}
+          tag: ${{ env.CONTAINER_TAG }}
           registry: registry.hub.docker.com/idelsink
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
           password: ${{ secrets.DOCKER_HUB_PASSWORD }}
