@@ -14,7 +14,7 @@
   "dependencies": {
     "@discordjs/opus": "^0.1.0",
     "@ffflorian/icanhazdadjoke": "^1.3.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bluebird": "^3.7.2",
     "cheerio": "^1.0.0-rc.5",
     "config": "^3.3.3",
