@@ -1,0 +1,35 @@
+
+name: CI
+
+on:
+  create:
+    tags:
+      - v*
+  push:
+    branches:
+      - master
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build container
+        uses: redhat-actions/buildah-build@v1
+        with:
+          image: tide-discord-bot
+          tag: ${{ github.ref }}
+          dockerfiles: ./Dockerfile
+
+      - name: Push to registry
+        uses: redhat-actions/push-to-registry@v1.2
+        with:
+          image: tide-discord-bot
+          tag: ${{ github.ref }}
+          registry: registry.hub.docker.com/idelsink
+          username: ${{ secrets.DOCKER_HUB_USERNAME }}
+          password: ${{ secrets.DOCKER_HUB_PASSWORD }}
