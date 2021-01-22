@@ -22,6 +22,8 @@ jobs:
       - name: Build container
         uses: redhat-actions/buildah-build@v1
         with:
+          build-args: |
+            VERSION=${{ env.CONTAINER_TAG }}
           image: ${{ env.CONTAINER_IMAGE }}
           tag: ${{ env.CONTAINER_TAG }}
           dockerfiles: ./Dockerfile
