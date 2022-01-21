@@ -23,7 +23,7 @@
     "discord.js": "^12.5.1",
     "ffmpeg-static": "^4.2.7",
     "lodash": "^4.17.20",
-    "log4js": "^6.3.0",
+    "log4js": "^6.4.0",
     "proxmox": "^0.1.0",
     "sodium": "^3.0.2",
     "ytdl-core": "^4.4.5",
